@@ -1,0 +1,3 @@
+calling the function def tap_ocr(action_object, image_before_action) and passing the object which is the name of the element. this will be given by the comman classifier function and image before is where we pass the screenbefore action this can be image path or numpy array or image file as bytes
+
+this function will return three things does_match, bbox, end-start first is a boolean value which tells if the object is found or not, second is the bounding box of the object and third is the time taken to find the object
