@@ -71,8 +71,6 @@ def match(action_object, image_text):
     matching_elements = sorted(matching_elements, key=lambda x: x["matching_words"], reverse=True)
     if len(matching_elements) == 1 and matching_elements[0]['matching_words'] == len(action_object):
         return True, matching_elements[0]['center'], matching_elements[0]['bbox']
-    # elif len(matching_elements) > 1 and matching_elements[0]['matchig_words'] == len(action_object) and matching_elements[1]['matching_words'] != matching_elements[0]['matching_words']:
-    #     return True, matching_elements[0]['bbox']
     else:
         return False, None, None
     
